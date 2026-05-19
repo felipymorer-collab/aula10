@@ -1,0 +1,31 @@
+```c id="d47wp7"
+#include <stdio.h>
+
+int main() {
+    char aluno[50];
+    char disciplina[50];
+    float nota1, nota2, nota3, media;
+
+    printf("Digite o nome do aluno: ");
+    scanf("%49s", aluno);
+
+    printf("Digite o nome da disciplina: ");
+    scanf("%49s", disciplina);
+
+    printf("Digite a primeira nota: ");
+    scanf("%f", &nota1);
+
+    printf("Digite a segunda nota: ");
+    scanf("%f", &nota2);
+
+    printf("Digite a terceira nota: ");
+    scanf("%f", &nota3);
+
+    media = (nota1 + nota2 + nota3) / 3;
+
+    printf("%s, obteve %.1f pontos na media da disciplina %s.\n",
+           aluno, media, disciplina);
+
+    return 0;
+}
+```
