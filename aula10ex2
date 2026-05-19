@@ -1,0 +1,19 @@
+```c id="0fh2gq"
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char senha[100];
+
+    printf("Digite a senha: ");
+    scanf("%99s", senha);
+
+    if (strlen(senha) >= 8) {
+        printf("Senha valida.\n");
+    } else {
+        printf("Senha invalida. A senha deve ter pelo menos 8 caracteres.\n");
+    }
+
+    return 0;
+}
+```
